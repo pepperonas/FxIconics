@@ -79,7 +79,7 @@
                     <plugin>
                         <artifactId>maven-jar-plugin</artifactId>
                         <configuration>
-                            <outputDirectory>${user.home}/workspace/JavaFX/clipfx/lib</outputDirectory>
+                            <outputDirectory>${project.basedir}/versions/</outputDirectory>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -92,7 +92,7 @@
                     <plugin>
                         <artifactId>maven-jar-plugin</artifactId>
                         <configuration>
-                            <outputDirectory>${project.basedir}/</outputDirectory>
+                            <outputDirectory>${project.basedir}/versions/</outputDirectory>
                         </configuration>
                     </plugin>
                 </plugins>
