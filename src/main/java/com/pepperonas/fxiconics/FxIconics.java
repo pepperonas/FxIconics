@@ -15,6 +15,12 @@
 
 package com.pepperonas.fxiconics;
 
+import com.pepperonas.fxiconics.awf.FxFontAwesome;
+import com.pepperonas.fxiconics.cmd.FxFontCommunity;
+import com.pepperonas.fxiconics.gmd.FxFontGoogleMaterial;
+import com.pepperonas.fxiconics.met.FxFontMeteoconcs;
+import com.pepperonas.fxiconics.oct.FxFontOcticons;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -26,56 +32,67 @@ import javafx.scene.text.Font;
  */
 public class FxIconics {
 
-
     public static Font getGoogleMaterialFont() {
         return Font.loadFont(FxIconics.class.getResource("google_material_design.ttf").toExternalForm(), 24);
     }
+
 
     public static Font getCommunityMaterialFont() {
         return Font.loadFont(FxIconics.class.getResource("materialdesignicons-webfont.ttf").toExternalForm(), 24);
     }
 
+
     public static Font getAwesomeFont() {
         return Font.loadFont(FxIconics.class.getResource("fontawesome-webfont-4.3.0.ttf").toExternalForm(), 24);
     }
+
 
     public static Font getOcticonsFont() {
         return Font.loadFont(FxIconics.class.getResource("octicons.ttf").toExternalForm(), 24);
     }
 
+
     public static Font getMeteoconsFont() {
         return Font.loadFont(FxIconics.class.getResource("meteocons.ttf").toExternalForm(), 24);
     }
+
 
     public static Font getGoogleMaterialFont(int fontSize) {
         return Font.loadFont(FxIconics.class.getResource("google_material_design.ttf").toExternalForm(), fontSize);
     }
 
+
     public static Font getCommunityMaterialFont(int fontSize) {
         return Font.loadFont(FxIconics.class.getResource("materialdesignicons-webfont.ttf").toExternalForm(), fontSize);
     }
+
 
     public static Font getAwesomeFont(int fontSize) {
         return Font.loadFont(FxIconics.class.getResource("fontawesome-webfont-4.3.0.ttf").toExternalForm(), fontSize);
     }
 
+
     public static Font getOcticonsFont(int fontSize) {
         return Font.loadFont(FxIconics.class.getResource("octicons.ttf").toExternalForm(), fontSize);
     }
 
+
     public static Font getMeteoconsFont(int fontSize) {
         return Font.loadFont(FxIconics.class.getResource("meteocons.ttf").toExternalForm(), fontSize);
     }
+
 
     public static String getLibraryName() {
         Properties prop = getProp();
         return prop.getProperty("libraryName");
     }
 
+
     public static String getVersionName() {
         Properties prop = getProp();
         return prop.getProperty("versionName");
     }
+
 
     private static Properties getProp() {
         Properties prop = new Properties();
@@ -89,5 +106,54 @@ public class FxIconics {
         return prop;
     }
 
+
+    public static FxFontAwesome.Icons findAweFont(String font) {
+        try {
+            return FxFontAwesome.Icons.valueOf(font);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Font not found.");
+        }
+        return null;
+    }
+
+
+    public static FxFontGoogleMaterial.Icons findGmdFont(String font) {
+        try {
+            return FxFontGoogleMaterial.Icons.valueOf(font);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Font not found.");
+        }
+        return null;
+    }
+
+
+    public static FxFontCommunity.Icons findCmdFont(String font) {
+        try {
+            return FxFontCommunity.Icons.valueOf(font);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Font not found.");
+        }
+        return null;
+    }
+
+
+    public static FxFontOcticons.Icons findOctFont(String font) {
+        try {
+            return FxFontOcticons.Icons.valueOf(font);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Font not found.");
+        }
+        return null;
+    }
+
+
+    public static FxFontMeteoconcs.Icons findMetFont(String font) {
+        try {
+            return FxFontMeteoconcs.Icons.valueOf(font);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Font not found.");
+        }
+        return null;
+    }
 
 }

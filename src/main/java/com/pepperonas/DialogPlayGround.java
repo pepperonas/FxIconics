@@ -15,6 +15,7 @@
 
 package com.pepperonas;
 
+import com.pepperonas.fxiconics.FxIconics;
 import com.pepperonas.fxiconics.FxIconicsButton;
 import com.pepperonas.fxiconics.FxIconicsLabel;
 import com.pepperonas.fxiconics.MaterialColor;
@@ -39,6 +40,7 @@ public class DialogPlayGround {
     private static final int LABEL_TEXT_SIZE = 18;
     private static final String LABEL_CSS = "-fx-font-size: " + LABEL_TEXT_SIZE + "pt;" +
                                             "-fx-font-weight: bold;";
+
 
     public DialogPlayGround() {
         Stage dialog = new Stage(StageStyle.UTILITY);
@@ -74,7 +76,7 @@ public class DialogPlayGround {
         l_fx_iconics_label.setStyle(LABEL_CSS);
 
         FxIconicsLabel labelDefault =
-                (FxIconicsLabel) new FxIconicsLabel.Builder(FxFontGoogleMaterial.Icons.gmd_folder_special)
+                (FxIconicsLabel) new FxIconicsLabel.Builder(FxIconics.findGmdFont("gmd_folder_special"))
                         .size(24)
                         .color(MaterialColor.INDIGO_500)
                         .build();
@@ -93,6 +95,7 @@ public class DialogPlayGround {
 
         box.getChildren().addAll(l_fx_iconics_label, labelDefault, labelColored, labelResized);
     }
+
 
     private void initFxIconicsButton(VBox box) {
         Label l_fx_iconics_button = new Label("FxIconicsButton");
@@ -118,6 +121,7 @@ public class DialogPlayGround {
 
         box.getChildren().addAll(l_fx_iconics_button, btnDefault, btnColored, btnResized);
     }
+
 
     private void initFxIconicsLabelText(VBox box) {
         Label l_fx_iconics_label_text = new Label("FxIconicsLabel (Text)");
@@ -153,6 +157,7 @@ public class DialogPlayGround {
 
         box.getChildren().addAll(l_fx_iconics_label_text, labelTextDefault, labelTextLeft, labelTextTop, labelTextBottom);
     }
+
 
     private void initFxIconicsButtonText(VBox box) {
         Label l_fx_iconics_button_text = new Label("FxIconicsButton (Text)");
