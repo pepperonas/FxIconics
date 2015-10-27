@@ -276,5 +276,6 @@ public class MaterialColor {
     public static final String BLUE_GREY_900 = "#263238";
     public static final String BLUE_GREY_BLACK = "#000000";
     public static final String BLUE_GREY_WHITE = "#ffffff";
-
+    public static final String BLACK = "#000000";
+    public static final String WHITE = "#ffffff";
 }
