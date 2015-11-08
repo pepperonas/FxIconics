@@ -4,7 +4,7 @@ This project is a JavaFx port of the famous [Android-Iconics](https://github.com
 
 ##How to use
 ###1. Import
-Add `fxiconics-0.0.4.jar` to your project dependencies.
+Add `fxiconics-0.0.5-jfx` to your project dependencies.
 
 
 ###2. Creating a Node
@@ -25,7 +25,7 @@ FxIconicsButton btnDefault =
 ```
 
 ##Demo
-Run `fxiconics-0.0.4-showcase.jar` to get an overview of the containing resources. You may want use this showcase to access the resources more easily. If so, just click an item and the particular icon-name will be clipped to your board. To get a colorized preview click-right an item.
+Run `fxiconics-0.0.5-jfx` to get an overview of the containing resources. You may want use this showcase to access the resources more easily. If so, just click an item and the particular icon-name will be clipped to your board. To get a colorized preview click-right an item.
 ![Image](https://raw.githubusercontent.com/pepperonas/FxIconics/master/img01.png)
 ![Image](https://raw.githubusercontent.com/pepperonas/FxIconics/master/img02.png)
 
