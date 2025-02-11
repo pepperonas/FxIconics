@@ -1,13 +1,13 @@
-#FxIconics
+# FxIconics
 This project is a JavaFx port of the famous [Android-Iconics](https://github.com/mikepenz/Android-Iconics/) library.
 
 
-##How to use
-###1. Import
+## How to use
+### 1. Import
 Add `fxiconics-0.0.5-jfx` to your project dependencies.
 
 
-###2. Creating a Node
+### 2. Creating a Node
 ```java
 FxIconicsLabel labelDefault =
         (FxIconicsLabel) new FxIconicsLabel.Builder(FxFontGoogleMaterial.Icons.gmd_folder_special)
